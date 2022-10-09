@@ -1,0 +1,175 @@
+body {
+  background: #FFF !important;
+  font-family: 'Indie Flower', cursive;
+}
+/* Loader */
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+#logo-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+.milky-way_loader {
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  width: 50px;
+}
+
+.arrow {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  opacity: 0%;
+}
+
+span {
+  opacity: 0%;
+}
+
+#very-bad {
+  display: flex;
+  flex-direction: column;
+}
+
+#very-bad .arrow {
+  transform: rotate(-60deg);
+}
+
+#very-bad span {
+  position: relative;
+  right: 50px;
+  bottom: 10px;
+  font-size: 0.8rem;
+}
+
+#bad {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bad .arrow {
+  transform: rotate(-100deg);
+}
+
+#bad span {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  font-size: 0.8rem;
+}
+
+
+#regular {
+  display: flex;
+  flex-direction: column;
+}
+
+#regular .arrow {
+  transform: rotate(180deg);
+  left: 10px;
+}
+
+#regular span {
+  position: relative;
+  font-size: 0.8rem;
+}
+
+#good {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#good .arrow {
+  left: 20px;
+  transform: rotate(115deg);
+}
+
+#good span {
+  position: relative;
+  left: 55px;
+  top: 10px;
+  font-size: 0.8rem;
+}
+
+#very-good {
+  display: flex;
+  flex-direction: column;
+}
+
+#very-good .arrow {
+  left: 20px;
+  transform: rotate(60deg);
+}
+
+#very-good span {
+  position: relative;
+  left: 55px;
+  bottom: 15px;
+  font-size: 0.8rem;
+}
+
+/* Explosion effect */
+.milky-way {
+  display: none;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.particle__container{
+    width: 40px;
+    min-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+ }
+ .explosion {
+   position: absolute;
+   width: 600px;
+   height: 600px;
+   pointer-events: none;
+ }
+ .explosion .particle {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   animation: pop 1s reverse forwards;
+ }
+ 
+ @keyframes pop {
+   from {
+     opacity: 0;
+   }
+   to {
+     top: 50%;
+     left: 50%;
+     opacity: 1;
+   }
+ }

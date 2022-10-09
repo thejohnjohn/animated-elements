@@ -1,0 +1,26 @@
+{
+  "name": "animated-elements",
+  "version": "0.0.1",
+  "description": "Just animation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jQuery",
+    "HTML",
+    "CSS",
+    "Animation"
+  ],
+  "author": "github.com/thejohnjohn",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "babel-loader": "^8.2.5",
+    "expose-loader": "^4.0.0"
+  }
+}

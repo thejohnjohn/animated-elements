@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Animated loader and elements"
+      content="Sample animation for reyta platform"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    
+    <title>Animated explosions</title>
+    <link rel="stylesheet" href="./styles.css" />
+    </head>
+  <body>
+    <div class="preloader">
+      <h1 class="title">Rate: </h1>
+      <div class="milky-way_loader">
+        <div id="very-bad" >
+          <img class="star" src="./star-empty.svg" />
+          <img class="arrow" src="./assets/curved-left-arrow.svg" />
+          <span>very bad</span>
+        </div>
+        <div id="bad" >
+          <span>bad</span>
+          <img class="arrow" src="./assets/curved-right.svg" />
+          <img class="star" src="./star-empty.svg" />
+        </div>
+        <div id="regular" >
+          <img class="star" src="./star-empty.svg" />
+          <img class="arrow" src="./assets/arrow.svg" />
+          <span>regular</span>
+        </div>
+        <div id="good" >
+          <span>good</span>
+          <img class="arrow" src="./assets/curved-left-arrow.svg" />
+          <img class="star" src="./star-empty.svg" />
+        </div>
+        <div id="very-good" >
+          <img class="star" src="./star-empty.svg" />
+          <img class="arrow" src="./assets/curved-right.svg" />
+          <span>very good</span>
+        </div>
+      </div>
+      <div id="logo-container">
+        <img id="logo" src="./Reyta.svg"/>
+      </div>
+    </div>
+    <div class="milky-way">
+      <img id="1" class="particle__container" src="./star-empty.svg" />
+      <img id="2" class="particle__container" src="./star-empty.svg" />
+      <img id="3" class="particle__container" src="./star-empty.svg" />
+      <img id="4" class="particle__container" src="./star-empty.svg" />
+      <img id="5" class="particle__container" src="./star-empty.svg" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
